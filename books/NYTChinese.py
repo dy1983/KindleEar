@@ -18,7 +18,7 @@ class NYTChinese(BaseFeedBook):
     # oldest_article        = 1
     
     feeds = [
-        (u'首页', 'https://cn.nytimes.com/'),
+        # (u'首页', 'https://cn.nytimes.com/'),
         (u'国际', 'https://cn.nytimes.com/world/'),
         (u'中国', 'https://cn.nytimes.com/china/'),
         (u'经济', 'https://cn.nytimes.com/business/'),
