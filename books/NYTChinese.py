@@ -34,6 +34,9 @@ class NYTChinese(BaseFeedBook):
         dict(name='div', class_='article-paragraph'),
     ]
 
+    max_articles_per_feed = 10 # 设定每个主题下要最多可抓取的文章数量
+    # oldest_article = 3 # 设定文章的时间范围。小于等于365则单位为天，否则单位为秒，0为不限制。
+
     def ParseFeedUrls(self):
         urls = [] # 定义一个空的列表用来存放文章元组
         # 循环处理fees中两个主题页面
